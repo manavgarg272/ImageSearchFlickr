@@ -1,0 +1,53 @@
+.ImagesRecommended {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  height: 80px;
+  display: flex;
+}
+
+.inputBar[type="text"] {
+  margin-left: 16%;
+  margin-top: 1.5%;
+  width: 600px;
+  height: 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 4px solid wheat;
+}
+
+.Button {
+  height: 30px;
+  margin-top: 1.5%;
+  width: 5%;
+  transition-duration: 0.4s;
+}
+.Button:hover {
+  background-color: wheat; /* Green */
+  color: white;
+}
+
+.showimages {
+  margin: 5px;
+  column-count: 3;
+  padding: 10px;
+}
+img {
+  width: 400px;
+  height: 400px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 4px solid wheat;
+}
+p {
+  padding-left: 2%;
+  font-size: 40px;
+  margin-top: 5px;
+  font-style: italic;
+  color: wheat;
+}

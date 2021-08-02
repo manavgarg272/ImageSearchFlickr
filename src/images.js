@@ -11,7 +11,7 @@ function ImagesRecommended() {
   const [inputText, setinputText] = useState("");
   const getImages = async (e) => {
     const response = await fetch(
-      "https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=fa069a72b6c8974da3062a83340641e6&format=json&nojsoncallback=1"
+      "https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=dd827c3760347fb602ec6d5c79882d75&format=json&nojsoncallback=1"
     );
     const data = await response.json();
     setImages(data.photos.photo);
@@ -23,7 +23,7 @@ function ImagesRecommended() {
 
   const onSubmit = async (e) => {
     try {
-      var url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=fa069a72b6c8974da3062a83340641e6&text=${inputText}&format=json&nojsoncallback=1`;
+      var url = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=dd827c3760347fb602ec6d5c79882d75&text=${inputText}&format=json&nojsoncallback=1`;
       await axios.get(url).then((response) => {
         setImages(response.data.photos.photo);
       });
